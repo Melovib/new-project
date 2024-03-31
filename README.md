@@ -1,21 +1,15 @@
-# new-project
-Jira Ticket:
+Команда git checkout може використовуватися для роботи з гілками в Git. З її допомогою можна створювати нові, перемикатися між наявними та видаляти.
 
-Task Title: Set up new Git repository and create development branch for 'new-project'
+Для створення нової гілки з ім’ям develop можна використовувати команду git checkout -b <ім’я_гілки>:
+git checkout -b develop
+Так ми створимо нову гілку develop і перемкнемо робочу копію на цю гілку.
 
-Task Description:
+А щоб переключитися на гілку develop між наявними, можна виконати таку команду:
+git checkout develop
+Ця команда перемкне робочу копію на гілку develop.
 
-As a developer, I need a new GitHub repository for 'new-project' and i need a development branch so that I can work on new features without affecting the main branch. 
-Readme file should contain step-by-step instructions on how we can do it ourselves.
+Розглянемо кілька порад і найкращих практик щодо роботи з гілками в Git:
 
-Expected Results:
-
-A new branch called "development" is created and the user is able to switch to it successfully.
-A new file called "README.md" is created and step-by-step instructions is added to it successfully.
-The changes to the "development" branch are committed with a commit message successfully.
-The changes from the "development" branch are merged into the "main" branch successfully.
-
-
-Definition of Done (DoD):
-
-Link to new-project Readme file
+Використовуйте гілки для розробки нових функцій або виправлення помилок. Це дасть вам змогу ізолювати свої зміни від основної гілки, що зробить процес розробки безпечнішим і ефективнішим.
+Перед тим, як створити нову гілку, переконайтеся, що ваша робоча копія перебуває в чистому стані. Це означає, що всі ваші зміни мають бути зафіксовані.
+Після того, як ви закінчили розробку на гілці, об’єднайте її з основною. Це дасть вам змогу перенести ваші зміни в основну гілку і зробити їх доступними для інших розробників.
